@@ -14,12 +14,16 @@ module.exports = {
       modules: true
     }
   },
+  settings: {
+    'import/resolver': 'webpack'
+  },
   rules: {
     // 0 means off
     // 1 means warnings but not required
     // 2 means required
     'arrow-body-style': 0,
     'no-unused-vars': 2,
+    'import/no-unresolved': 0,
     'no-unused-expressions': ['error', { allowTaggedTemplates: true }],
     'no-var': 1,
     'prefer-destructuring': 2,
